@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Статьи</title>
+
+    {% include 'page-common.html' %}
+
+    {% include 'page-common-style.html' %}
+
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+{% include 'page-navbar.html' %}
+
+{% block body %}
+{% endblock %}
+
+{% include 'page-footer.html' %}
+
+{% include 'page-common-scripts.html' %}
+
+{% include 'page-common-js.html' %}
+</body>
+</html>

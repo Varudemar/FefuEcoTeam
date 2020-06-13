@@ -1,0 +1,54 @@
+{% extends 'articles-main.html' %}
+{% load static %}
+{% block head %}
+    <meta name="description" content="{{ desc }}"/>
+    <meta name="keywords" content="{{ key }}"/>
+{% endblock %}
+
+{% block body %}
+    <section class="article">
+        <div class="title">
+            <h1 class="font-weight-light"> Статьи </h1>
+        </div>
+        {% if not posts %}
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light" style="font-size: 3vh"><b>Статьи не найдены</b></h1>
+                </div>
+            </div>
+        {% else %}
+            {% for obj in posts %}
+                <a href="{{ obj.get_absolute_url }}">
+                    <div class="article-card card">
+                        <div class="row">
+                            <div class="col-6 article-box">
+                                {% if obj.image %}
+                                    <img class="card-img-top lazy" src='{{ obj.image.url }}'>
+                                {% else %}
+                                    <p></p>
+                                {% endif %}
+                            </div>
+                            <div class="card-body col-6">
+                                <h5 class="card-title">{{ obj.title }}</h5>
+                                <p class="card-text">{{ obj.content|truncatechars:70 }}</p>
+                                <span>{{ obj.timestamp }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        {% endif %}
+
+        <div class="row">
+            <div class="col-12 text-center">
+                {% if posts.has_previous %}
+                    <a href="?page={{ posts.previous_page_number }}">Назад</a>
+                {% endif %}
+                <span>{{ posts.number }} / {{ posts.num_pages }}</span>
+                {% if posts.has_next %}
+                    <a href="?page={{ posts.next_page_number }}">Вперед</a>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

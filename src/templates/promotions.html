@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block body %}
+    <section class="EventsAndAction">
+        <div class="EventsAndAction-container">
+            <div class="title">
+                <h1 class="font-weight-light" style="color: black"> Ближайшие акции и события </h1></div>
+            <div>
+                <div class="row">
+                    <div class="container">
+                        {% if not promotions %}
+                            <div class="row">
+                                <div class="col-12 event-item">
+                                    <h4 class="card-title">
+                                        Ближайших ожидаемых событий нет...
+                                    </h4>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="row">
+                                {% for obj in promotions %}
+                                    <div class="col-12 col-sm-6 event-item">
+                                        <div class="card h-100">
+                                            {% if obj.image %}
+                                                <a href='{{ obj.get_absolute_url }}'>
+                                                    <img class="card-img-top lazy"
+                                                         src='{{ obj.image.url }}'/>
+                                                </a>
+                                            {% else %}
+                                                <p></p>
+                                            {% endif %}
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a>
+                                                </h4>
+                                                <small class="post-meta"><a
+                                                        href='{{ obj.get_absolute_url }}'>{{ obj.keywords }}</a>,
+                                                    <a href='{{ obj.get_absolute_url }}'>{{ obj.timestamp }}</a>
+                                                </small>
+                                                <p class="card-text">{{ obj.description }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

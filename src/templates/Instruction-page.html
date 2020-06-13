@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <head>
+
+        {% include 'page-common.html' %}
+
+        {% include 'page-common-style.html' %}
+
+        <title>Как начать разделять отходы дома!</title>
+    </head>
+</head>
+<body style="background-image: url({% static 'Instruction-background2.webp' %})">
+
+{% include 'page-navbar.html' %}
+
+<section class="header-instruction">
+    <div class="container h-100">
+        <div class="row align-item-center">
+            <div style="margin-top: 5vh" class="col-12 text-center">
+                <hr>
+                <h1 class="font-weight-medium">Раздельный сбор отходов</h1>
+                <hr>
+            </div>
+            <div style="margin-top: 5vh; color: white" class="col-12 text-center">
+                <h4>На этой странице мы собрали конкретные рекомендации и шаги, которые может делать каждый активный
+                    человек,
+                    чтобы
+                    уже сегодня внести вклад в решение мусорной проблемы</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Info-section">
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 border border-dark" style="border: 4px double black;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div>
+                        <button type="button" class="btn btn-dark active my-button" aria-pressed="true">
+                            <h1 class="font-weight-light"> Совет </h1>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <h6>Предложенные шаги выстроены по принципу от простого к сложному. Вы можете выбрать несколько из
+                        них
+                        или начать с простого и постепенно добавлять более «продвинутые» варианты.</h6>
+                    <hr style="background-color: black">
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-12"><img class="Info-section-header-img"
+                                 src='{% static "instruction-info-section-background-before.png" %}'></div>
+        <div class="col-sm-0 col-md-3"></div>
+        <div class="col-sm-12 col-md-6 text-center Info-section-header">
+            <hr style="background-color: black">
+            <hr>
+            <h1 class="font-weight-heavy" style="color: black"> Начните с себя </h1>
+            <hr>
+            <hr style="background-color: black">
+        </div>
+        <div class="col-sm-0 col-md-3"></div>
+        <div class="col-sm-0 col-md-2"></div>
+        <div style="margin-bottom: 8vh;" class="col-sm-12 col-md-8 text-center">
+            <h5>Вы можете начать собирать раздельно один или несколько видов отходов (фракций) у себя дома или в офисе и
+                сдавать
+                их во вторичную переработку. Многие начинают с бумаги и потом добавляют другие фракции: пластик, стекло,
+                алюминий
+                и т.д.</h5>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center Info-section-div">
+            <div><img class="Info-section-img-big" src='{% static "site-icons/instruction-icon-map.jpg" %}'></div>
+            <h6>Найдите на карте ближайший пункт приема вторсырья.</h6>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center Info-section-div">
+            <div><img class="Info-section-img-big" src='{% static "site-icons/instruction-icon-garbage.png" %}'></div>
+            <h6>Определите, какие виды сырья принимает этот пункт и не забудьте изучить информацию о других пунктах —
+                возможно,
+                они принимают больший спектр отходов.</h6>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center Info-section-div">
+            <div><img class="Info-section-img-big" src='{% static "site-icons/instruction-icon-sort.png" %}'></div>
+            <h6>Организуйте раздельный сбор отходов дома.</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row">
+            <div class="col-sm-0 col-md-3"></div>
+            <div class="col-sm-12 col-md-6 text-center Info-section-header">
+                <hr style="background-color: black">
+                <hr>
+                <h1 class="font-weight-heavy" style="color: black"> Как организовать раздельный сбор отходов дома </h1>
+                <hr>
+                <hr style="background-color: black">
+            </div>
+            <div class="col-sm-0 col-md-3"></div>
+            <div class="col-sm-0 col-md-2"></div>
+            <div style="margin-bottom: 8vh;" class="col-sm-12 col-md-8 text-center">
+                <h5>Хорошая новость! Вам не нужны 10 ведер!
+                    Достаточно разделять отходы на 3 части – на какие именно, вы узнаете ниже.
+
+                    Самое важное в процессе раздельного сбора отходов – не допустить смешивания перерабатываемых и не
+                    перерабатываемых
+                    отходов.</h5>
+            </div>
+            <div class="col-sm-0 col-md-2"></div>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center Info-section-div">
+            <div><img class="Info-section-img-big" src='{% static "site-icons/instruction-icon-plastic.jpg" %}'></div>
+            <h6> Поставьте дома отдельную ёмкость (ведро, специальный ящик или пакет) для сбора перерабатываемых
+                отходов.</h6>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center Info-section-div">
+            <div><img class="Info-section-img-big" src='{% static "site-icons/instruction-icon-plastic-bottle.png" %}'>
+            </div>
+            <h6> Перед тем, как сортировать отходы, их нужно сполоснуть под проточной водой, чтобы очистить от пищевых
+                остатков –
+                это позволит избежать неприятных запахов и повысит качество вторсырья.</h6>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center Info-section-div">
+            <div><img class="Info-section-img-big" src='{% static "site-icons/instruction-icon-plastic-press.jpg" %}'>
+            </div>
+            <h6>Большую часть отходов при желании можно уменьшить в объеме.
+                Такой простой принцип поможет вам реже ходить в пункт приёма вторсырья и каждый раз относить больше
+                вторсырья и
+                меньше воздуха.
+                Кроме того, машина, приезжающая за вторсырьём, сможет вывозить бoльшее количество отходов по массе, а
+                значит,
+                приезжать реже и меньше загрязнять воздух выхлопными газами.</h6>
+        </div>
+        <div class="col-12"><img class="Info-section-header-img"
+                                 src='{% static "instruction-info-section-background-after.png" %}'></div>
+    </div>
+    <div class="row" style="margin-top: 10vh;">
+        <div class="col-3"></div>
+        <div class="col-6 border border-dark" style="border: 4px double black;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div>
+                        <button type="button" class="btn btn-dark active my-button" aria-pressed="true">
+                            <h1 class="font-weight-light"> Совет </h1>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <h6>Если рядом с вашим домом нет специальных контейнеров для вторсырья или в них принимают не все
+                        виды отходов,
+                        вы
+                        можете собирать их дома и вывозить раз в несколько месяцев в пункт приема вторсырья. Как
+                        правило, грамотно
+                        спрессованные отходы не занимают много места.
+                        Вам повезло, если у вас есть балкон или другое свободное пространство.</h6>
+                    <hr style="background-color: black">
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</section>
+<section class="slidebanner" style="box-shadow: 0 0 0 100pc rgba(0, 0, 0, 0.44) inset;">
+    <div style="padding: 4vh 8vh">
+        <div style="background: rgba(255, 255, 255, 0.85); text-align: start;">
+            <div style="padding: 1vh; padding-left: 2vh; padding-bottom: 7vh; display: inline-block; height: 7vh"
+                 class="textbanner">
+                <h1 class="font-weight-light" style="color: black; padding: 0.5vh">Инструкция по раздельному сбору</h1>
+            </div>
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.65); text-align: start;">
+            <div class="font-weight-light" style=" display: block;">
+                <!--Carousel Wrapper-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div style="min-height: 30vh" class=" font-weight-light carousel-inner">
+                        <div class="carousel-item active">
+                            <!--1st slide of carusel-->
+                            <div class="carousel-second-title">
+                                <h2>Мягкий пластик</h2></div>
+                            <div class="carousel-container">
+                                <div class="row align-items-center">
+                                    <div class="col-4"><img class="d-block w-100"
+                                                            src='{% static "site-icons/pete-1.png" %}'
+                                                            alt="Первый слайд"></div>
+                                    <div class="col-7">
+                                        <h3 style=" margin-bottom: 1vh;">ПЭТ / PETE / PET-R</h3>
+                                        <h4 style="margin-bottom: 5vh">
+                                            Пластиковые бутылки с выпуклой точкой на дне:
+                                            из-под воды и других напитков, шампуней и др.
+                                            Маркировка может отсутствовать
+                                        </h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-second-title">
+                                <h2>Мягкий пластик</h2></div>
+                            <div class="carousel-container">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-4"><img class="d-block w-100"
+                                                            src='{% static "site-icons/pe-hd-02.png" %}'
+                                                            alt="Второй слайд"></div>
+                                    <div class="col-7">
+                                        <h3 style="margin-bottom: 1vh;">ПНД / HDPE / PE</h3>
+                                        <h4 style="margin-bottom: 5vh">
+                                            Пластиковые канистры, флаконы от бытовой химии, крышечки и кольца от бутылок
+                                        </h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-second-title">
+                                <h2>Мягкий пластик</h2></div>
+                            <div class="carousel-container">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-4"><img class="d-block w-100"
+                                                            src='{% static "site-icons/pe-ld-04.png" %}'
+                                                            alt="Третий слайд"></div>
+                                    <div class="col-7">
+                                        <h3 style="margin-bottom: 1vh;">ПВД / LDPE</h3>
+                                        <h4 style="margin-bottom: 5vh">
+                                            Некоторые упаковки от бытовой химии, косметики
+                                        </h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-second-title">
+                                <h2>Твёрдый пластик</h2></div>
+                            <div class="carousel-container">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-4"><img class="d-block w-100"
+                                                            src='{% static "site-icons/pe-ld-04.png" %}'
+                                                            alt="Чётвертый слайд"></div>
+                                    <div class="col-7">
+                                        <h3 style="margin-bottom: 1vh;">ПНД / HDPE / PE</h3>
+                                        <h4 style="margin-bottom: 5vh">
+                                            Шуршащие пакеты:
+                                            пакеты-майки, прозрачные пластиковые пакеты, стретч-плёнка
+                                        </h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-second-title">
+                                <h2>Твёрдый пластик</h2></div>
+                            <div class="carousel-container">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-4"><img class="d-block w-100"
+                                                            src='{% static "site-icons/pe-hd-02.png" %}'
+                                                            alt="Пятый слайд"></div>
+                                    <div class="col-7">
+                                        <h3 style="margin-bottom: 1vh;">ПВД / LDPE </h3>
+                                        <h4 style="margin-bottom: 5vh">
+                                            Плотные, гладкие на ощупь пакеты, воздушно-пузырьковая плёнка, зип-пакетики,
+                                            почтовые пакеты
+                                        </h4></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span
+                            class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                            class="sr-only">Previous</span> </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span
+                            class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                            class="sr-only">Next</span> </a>
+                </div>
+                <!--/.Carousel Wrapper-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Info-section">
+    <div class="row">
+        <div class="col-md-1 col-sm-0"></div>
+        <div class="col-md-10 col-sm-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#hardplastic">Твёрдый пластик</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#softplastic">Мягкий</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#wastepaper">Макулатура</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#metal">Металл и стекло</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="hardplastic">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col" width="10%">
+                                <p><b>МАРКИРОВКА</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>НЕ ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>КАК ПОДГОТОВИТЬ</b></p>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <p><img src='{% static "metodichka/image001.png" %}'></p>
+                                <p><b>1 / ПЭТ/ PET / PETE / PET-R</b>
+                                </p>
+                            </td>
+                            <td>
+                                <p>✓ Прозрачные бутылки (синие/голубые, зеленые, коричневые,
+                                    прозрачные)&nbsp
+                                </p>
+                                <p>✓ Белыебутылки непрозрачные бутылки с точкой на донышке
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Небутылированный PET 1
+                                </p>
+                                <p>
+                                    × Бутылки черного, кислотного, серебристого цвета
+                                </p>
+                                <p>
+                                    × Бутылки, испачканные в масле
+                                </p>
+                                <p>
+                                    × ПЭТ с примесью других видов пластика
+                                </p>
+                            </td>
+                            <td rowspan="4">
+                                <p>
+                                    ➤ Проверьте маркировку пластика
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Ополосните от остатков пищи и других веществ
+                                </p>
+                                <p></p>
+                                <p>➤ Снимите ценники, и по возможности этикетки (пластиковые
+                                    обязательно, бумажные – если не затрачивается большое кол-во воды)
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Снимите с бутылок крышечки и по возможности колечки
+                                </p>
+                                <p></p>
+                                <p>➤ Разделитеипо маркировкам пластика<b>&nbsp;</b>
+                                </p>
+                                <p></p>
+                                <p>➤ Сомните или сложите тару компактно
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img src='{% static "metodichka/image002.png" %}'></p>
+                                <p>
+                                    <b>2 / ПНД / HDPE / PEHD / PE</b>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    ✓ Флаконы из-под бытовой химии, косметики, витаминов
+                                </p>
+                                <p>
+                                    ✓ Матовые белые бутылки из-под молока
+                                </p>
+                                <p>
+                                    ✓ Крышечки и колечки от бутылок и тетрапаков
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Ведра из-под терраки,
+                                </p>
+                                <p>
+                                    × Невымытая тара из-под краски.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    <img src='{% static "metodichka/image003.png" %}'>
+                                </p>
+                                <p><b>4 / ПВД / LDPE / PELD</b></p>
+                            </td>
+                            <td>
+                                <p>
+                                    ✓ Крышки из-под 19-литровых бутылок
+                                </p>
+                                <p>
+                                    ✓ Некоторые баночки из-под косметических средств
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Тюбики от пасты, кремов и прочего
+                                </p>
+                                <p>
+                                    × Упаковки c маркировкой C/LDPE (смешанный материал)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img src='{% static "metodichka/image004.jpg" %}'></p>
+                                <p><b>5 / ПП / PP</b></p>
+                                <p></p>
+                            </td>
+                            <td>
+                                <p>
+                                    ✓ Баночки из-под молочной продукции
+                                </p>
+                                <p>
+                                    ✓ Пищевые контейнеры, трубочки
+                                </p>
+                                <p>
+                                    ✓ Пластиковая посуда с маркировкой 5 РР
+                                </p>
+                                <p>
+                                    ✓ Некоторые баночки из-под косметических средств
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Дозаторы
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade show active" id="softplastic">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col" width="10%">
+                                <p><b>МАРКИРОВКА</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>НЕ ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>КАК ПОДГОТОВИТЬ</b></p>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <p><span><img src='{% static "metodichka/image005.png" %}'></span></p>
+                                <p><b>2 / ПНД / HDPE / PE HD / PE</b></p>
+                            </td>
+                            <td>
+                                <p>
+                                    ✓ Фасовочные прозрачные и цветные пакетики
+                                </p>
+                                <p>
+                                    ✓ Пакеты-майки
+                                </p>
+                                <p>
+                                    ✓ Упаковочные пакеты из-под техники, одежды (если нет другой
+                                    маркировки)
+                                </p>
+                                <p>
+                                    ✓ Пищевая пленка
+                                </p>
+                                <p>
+                                    ✓ Некоторые брендовые пакеты (шуршит; на ощупь более жесткий, чем 4 / ПВД)
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Любые “биоразлагаемые” пакеты, имеющие маркировку D2W, надпись
+                                    “biodegradable” или любое другое обозначение, указывающее на то, что пластик -
+                                    биоразлагаемый. Такой упаковки лучше избегать.</p>
+                            </td>
+                            <td rowspan="3">
+                                <p>
+                                    ➤ Соберите пластик (размером не меньше, чем упаковка от шоколадки)
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Ополосните от остатков пищи или других веществ
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Разделите по видам пластика
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Сомните или сложите компактно
+                                </p>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img src='{% static "metodichka/image006.png" %}'></p>
+                                <p>
+                                    <b>4 / ПВД / LDPE / PE LD </b>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    ✓ Мягкие “жирноватые” фасовочные пакеты (под рыбу, кальмар)</p>
+                                <p>
+                                    ✓ Брендированные пакеты из магазинов одежды
+                                </p>
+                                <p>
+                                    ✓ Воздушно-пузырьковая пленка (пупырчатый полиэтилен)
+                                </p>
+                                <p>
+                                    ✓ Плотная пленка для теплиц
+                                </p>
+                                <p>
+                                    ✓ Упаковка из-под молока и овощных смесей
+                                </p>
+                                <p>
+                                    ✓ Упаковка из-под бумажных полотенец, детских подгузников
+                                </p>
+                                <p>
+                                    ✓ Тепличная пленка (тянется, маслянистый и плотный)
+
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Дой-паки, паучи (от соусов, майонезов)
+                                </p>
+                                <p>
+                                    × Упаковка из-под корма для животных
+                                </p>
+                                <p>
+                                    × Термоусадочная пленка
+                                </p>
+                                <p>
+                                    × Упаковка C/LDPE
+                                </p>
+                                <p>
+                                    × Скатерти, шторки для душа
+                                </p>
+                                <p>
+                                    × Пластиковые пакеты и упаковки очень маленьких размеров
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img src='{% static "metodichka/image007.jpg" %}'></p>
+                                <p><b>5 / ПП / PP</b></p>
+                            </td>
+                            <td>
+                                <p>
+                                    ✓ Пакеты от макарон, круп, хлебобулочных изделий, сыпучих продуктов
+                                </p>
+                                <p>
+                                    ✓ Упаковка от шоколада
+                                </p>
+                                <p>
+                                    ✓ Упаковка от цветов и коробок с чаем (плотный, гладкий, блестит, не тянется,
+                                    хрустит)
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Упаковки c маркировкой C/PP (смешанный материал)
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade show active" id="wastepaper">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col" width="10%">
+                                <p><b>МАРКИРОВКА</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>НЕ ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>КАК ПОДГОТОВИТЬ</b></p>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image001.png"></p>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image002.png"></p>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image003.png"></p>
+                            </td>
+                            <td>
+                                <p>
+                                    ✓ Гофрированный картон
+                                </p>
+                                <p>
+                                    ✓ Прочий картон с маркировкой и без неё (обязательно без пластикового слоя)
+                                </p>
+                                <p>
+                                    ✓ Упаковка от яиц
+                                </p>
+                                <p>
+                                    ✓ Крафт бумага и крафт пакеты
+                                </p>
+                                <p>
+                                    ✓ Тетради и атласы
+                                </p>
+                                <p>
+                                    ✓ Тетради и атласыЛистовки, брошюры, другая полиграфическая продукция (не глянец)
+                                </p>
+                                <p>
+                                    ✓ Конверты
+                                </p>
+                                <p>
+                                    ✓ Инструкции (от техники, лекарств и др.)
+                                </p>
+                                <p>
+                                    ✓ Офисная бумага (под принтер)
+                                </p>
+                                <p>
+                                    ✓ Книги
+                                </p>
+                                <p>
+                                    ✓ Прочие бумажные упаковки и предметы
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Журналы (и любая другая глянцевая печатная продукция)
+                                </p>
+                                <p>
+                                    × Грязная или пропитанная жиром бумага и картон
+                                </p>
+                                <p>
+                                    × Макулатура со скотчем
+                                </p>
+                                <p>
+                                    × Чеки, таможенные декларации и прочая термобумага
+                                </p>
+                                <p>
+                                    × Втулки от полотенец и туалетной бумаги
+                                </p>
+                                <p>
+                                    × Салфетки и бумажные полотенца
+                                </p>
+                                <p>
+                                    × “Бумажные” стаканчики и посуда
+                                </p>
+                                <p>
+                                    × Обои, калька, фотобумага и фотографии
+                                </p>
+                                <p>
+                                    × Бумага со сквозным окрашиванием (имеет цвет даже на разрыве)
+                                </p>
+                                <p>
+                                    × Ламинированная бумага (имеет видимый пластиковый слой при разрыве)
+                                </p>
+                                <p>
+                                    × Пергамент, вощеная бумага
+                                </p>
+                                <p>
+                                    × Тетрапаки
+                                </p>
+                                <p>
+                                    × Пачки от сигарет
+                                </p>
+                                <p>
+                                    × Бумага с водяными знаками и металлизацией
+                                </p>
+                                <p>
+                                    × Упаковка для пиццы
+                                </p>
+                                <p>
+                                    × Обертки от шоколадок, фантики от конфет
+                                </p>
+                                <p>
+                                    × Наждачная бумага
+                                </p>
+                                <p>
+                                    × Картонные изделия с другими маркировками (81, 82, 83 и т.д.)
+                                </p>
+
+                            </td>
+                            <td>
+                                <p>
+                                    ➤ Разделить ее согласно фракциям:
+                                <ol>
+                                    <li> гофрированный картон</li>
+                                    <li> прочий картон с
+                                        маркировкой и без неё (обязательно без пластикового слоя), упаковка от
+                                        яиц, крафт бумага, крафт пакеты
+                                    </li>
+                                    <li> тетради, листовки (не глянец), конверты, инструкции (от техники, лекарств и
+                                        т.д.), прочие бумажные упаковки и предметы
+                                    </li>
+                                    <li> офисная бумага</li>
+                                    <li> газеты</li>
+                                    <li> книги</li>
+                                </ol>
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Рассортировать отходы по цветам (черно-белые отдельно от цветных)
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Отделить ветхую, грязную, влажную, обгоревшую бумагу и другой неликвид
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Убрать скрепки, кнопки, скотч, пружины и все прочее, что не является бумагой
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Сложить МАКСИМАЛЬНО компактно (обязательно разбирать
+                                    все коробки), обвязать стопки веревками или сложить в закрывающиеся коробки
+                                    или пакеты
+                                </p>
+                                <p></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade show active" id="metal">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col" width="10%">
+                                <p><b>МАРКИРОВКА</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>НЕ ПРИНИМАЕТСЯ</b></p>
+                            </th>
+                            <th scope="col" width="30%">
+                                <p><b>КАК ПОДГОТОВИТЬ</b></p>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image004.png"></p>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image005.png"></p>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>Железо: </b>
+                                </p>
+                                <p>
+                                    ✓ Консервные банки от сгущенки, рыбы, детского питания, тушенки, овощей, корма для
+                                    животных и прочего
+                                </p>
+                                <p>
+                                    ✓ Крышки от стеклянных банок
+                                </p>
+                                <p>
+                                    <b>Алюминий: </b>
+                                </p>
+                                <p>
+                                    ✓ Банки из-под энергетиков, пива, газировки, минералки и прочего
+                                </p>
+                                <p>
+                                    ✓ Баллончики (обязательно пустой и проколотый)
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Фольга
+                                </p>
+                                <p>
+                                    × Фольгированные тонкие крышечки
+                                </p>
+                                <p>
+                                    × Фольгированные обертки от чего угодно
+                                </p>
+                                <p>
+                                    × Крупногабаритные предметы (больше 1 метра и тяжелее 20кг - сдавайте на пункты
+                                    приёма металлолома)
+                                </p>
+                                <p>
+                                    × Крупногабаритные предметы (больше 1 метра и тяжелее 20кг - сдавайте на пункты
+                                    приёма металлолома)
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    ➤ Разделите на предметы и тару с маркировкой 40 (магнитится) и 41
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Отмойте
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Снимите этикетки и ценники
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Снимите этикетки и ценники
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Сожмите
+                                </p>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image007.png"></p>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image007.png"></p>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image007.png"></p>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image007.png"></p>
+                                <p><img src="Metodichka_Blok_RSO_ostalnoe.files/image007.png"></p>
+                            </td>
+                            <td>
+                                <p>
+                                    Стекло обязательно делить на три цвета: прозрачный, зелёный, коричневый любые банки
+                                </p>
+                                <p>
+                                    ✓ бутылки пузырьки
+                                </p>
+                                <p>
+                                    ✓ флаконы от лекарств
+                                </p>
+                                <p>
+                                    ✓ пузырьки, флаконы от лекарств
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    × Оконное, оптическое стекло
+                                </p>
+                                <p>
+                                    × Автомобильное стекло
+                                </p>
+                                <p>
+                                    × Прозрачные лампочки
+                                </p>
+                                <p>
+                                    × Керамика сталь и прочие “не стеклянные” предметы
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    ➤ Снимите крышки и пробки
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Ополосните от содержимого
+                                </p>
+                                <p></p>
+                                <p>
+                                    ➤ Снимать НЕ НАДО:
+                                <ol>
+                                    <li>дозаторы</li>
+                                    <li>горлышки</li>
+                                    <li>этикетки</li>
+                                </ol>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'page-footer.html' %}
+
+{% include 'page-common-scripts.html' %}
+
+{% include 'page-common-js.html' %}
+
+</body>
+</html>

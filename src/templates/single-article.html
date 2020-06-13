@@ -1,0 +1,28 @@
+{% extends 'articles-main.html' %}
+{% load static %}
+{% block head %}
+    <meta name="description" content="Главная страница блога"/>
+    <meta name="keywords" content="блог"/>
+{% endblock %}
+
+{% block body %}
+    <section class="article">
+        <div class="article-card card">
+            <div class="row">
+                <div class="col-12">
+                    {% if post %}
+                        <h1 class="card-title text-center" style="color: black"> {{ post.title }}</h1>
+                        {% if post.image %}
+                            <img style="height: 100%" src='{{ post.image.url }}'>
+                        {% else %}
+                            <p></p>
+                        {% endif %}
+                        <h4 style="color: black"><p class="card-text">{{ post.content }}</p></h4>
+                    {% else %}
+                        <p>Страница не найдена</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
