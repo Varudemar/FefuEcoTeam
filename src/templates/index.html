@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+
+    {% include 'page-common.html' %}
+
+    {% include 'page-common-style.html' %}
+
+    <title>FEFU ECO TEAM (©VLAD)</title>
+
+</head>
+
+<body>
+
+{% include 'page-navbar.html' %}
+
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-start">
+            <div style="margin-top: 5vh" class="col-12 text-center">
+                <hr>
+                <h1 class="font-weight-medium">Раздельный сбор отходов</h1>
+                <hr>
+            </div>
+            <div class="col-8"></div>
+            <div style="" class="col-lg-4 col-sm-4 align-self-center">
+                <div style="background: rgba(255, 255, 255, 0.57); background-blend-mode: color; text-align: start;">
+                    <div style=" display: block; padding: 22% 32%;" class="textbanner"> FEFU ECO TEAM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<section class="Info-section">
+    <div class="row">
+        <div class="col-md-4 col-12">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsU6qh-q9d4OMBg7DPJMeoHO7zChw3rB0dfZ0tleLIWljDcg/viewform">
+                <div class="card review-card"><img class="w-50" src='{% static "site-icons/form-leaves-left.png" %}'
+                                                   class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="review-card__body">
+                            <h5 class="card-title">Форма участника</h5>
+                            <p class="card-text">(без постоянного пропуска)</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-12">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoRI6CD716R0xN2YOApf8QmygD_-SvpLCbOGcXX_HANaA6-g/viewform">
+                <div class="card review-card"><img class="w-50" src='{% static "site-icons/form-leaves-middle.png" %}'
+                                                   class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="review-card__body">
+                            <h5 class="card-title">Форма волонтёра</h5>
+                            <p class="card-text">Форма для волонтеров проекта FEFU ECO TEAM в акции "РазДельный Сбор" в
+                                кампусе
+                                ДВФУ</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-12">
+            <a href="#">
+                <div class="card review-card">
+                    <img class="w-50" src='{% static "site-icons/form-leaves-right.png" %}' class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <div class="review-card__body">
+                            <h5 class="card-title">Прочее</h5>
+                            <p class="card-text">...</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% block body %}
+{% endblock %}
+
+
+<section class="Info-section">
+    <div class="row" style="text-align: center; margin-left: 5vh; margin-right: 5vh">
+        <div style="" class="col-lg-4 col-sm-12"><img src='{% static "site-icons/cow.webp" %}'
+                                                      class="card-img-top Info-section-img" alt="">
+            <h1 class="Info-section-h1">500 кг</h1>
+            <div>отходов производит 1 человек
+                <br>за 1 год жизни.
+                <br>Это равно весу 1 коровы.
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12"><img src='{% static "site-icons/whale.webp" %}'
+                                             class="Info-section-img card-img-top Info-section-img" alt="">
+            <div>
+                <h1 class="Info-section-h1">35 тонн</h1></div>
+            <div>отходов производит 1 человек
+                <br>за 70 лет жизни.
+                <br>Это равно весу серого кита.
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12"><img src='{% static "site-icons/garbagetruck.webp" %}'
+                                             class="card-img-top Info-section-img" alt="">
+            <div>
+                <h1 class="Info-section-h1">90%</h1></div>
+            <div>отходов отправляются на свалки,
+                <br>где они будут разлагаться сотни лет,
+                <br>выделяя токсичные вещества.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slidebanner">
+    <div class="container h-100">
+        <div class="row h-100 align-items-start">
+            <div style="margin-top: 5vh" class="col-12 text-center">
+                <hr>
+                <h1 class="font-weight-medium">Самый безопасный способ обращения с отходами – раздельный сбор и
+                    переработка</h1>
+                <hr>
+            </div>
+            <div class="col-sm-0 col-md-3"></div>
+            <div class="col-sm-12 col-md-6"><h5 style="color: white;">Повторной переработке поддаётся
+                80–90% содержимого нашего мусорного ведра.</h5></div>
+            <div class="col-sm-0 col-md-3"></div>
+            <div style="margin-top: 5vh" class="col-12 text-center">
+                <a href="/instruction" id="instruction">
+                    <button type="button" class="btn btn-success btn-lg" style="width: 35vh; height: 8vh">ХОЧУ
+                        ДЕЙСТОВОВАТЬ!
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Info-section">
+    <div class="row" style="text-align: center">
+        <div class="col-12" style="margin-bottom: 10vh">
+            <h1 class="font-weight-bold" style="color: black;">Кроме этого, переработка<br>позволяет сэкономить ресурсы
+            </h1>
+            <h2 class="font-weight-light" style="margin-top: 3vh;font-size: 2.5vh">Ведь производство ещё одной банки,
+                которая<br>улетит в мусор, тоже имеет затраты!</h2></div>
+        <div class="col-lg-3 col-sm-12"><img src='{% static "site-icons/004tree.webp" %}'
+                                             class="card-img-top Info-section-img"
+                                             alt="">
+            <div>
+                <h1 class="Info-section-h1">10 деревьев</h1></div>
+            <div>Может спасти 1 тонна,
+                <br>собранной макулатуры.
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12"><img src='{% static "site-icons/003sports.webp" %}'
+                                             class="card-img-top Info-section-img"
+                                             alt="">
+            <div>
+                <h1 class="Info-section-h1">20 литров воды</h1></div>
+            <div>Будет сэкономлено
+                <br> благодаря переработке
+                <br> 1 кг макулатуры.
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12"><img src='{% static "site-icons/teacup1.webp" %}'
+                                             class="card-img-top Info-section-img"
+                                             alt="">
+            <div>
+                <h1 class="Info-section-h1">5 чашек чая</h1></div>
+            <div>можно вскипять,
+                <br>сэкономив энергию на
+                <br> переработке
+                <br> 2 стеклянных бутылок.
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12"><img src='{% static "site-icons/001technology.webp" %}'
+                                             class="card-img-top Info-section-img" alt="">
+            <div>
+                <h1 class="Info-section-h1">3 часа работы<br> телевизора</h1></div>
+            <div>Может обеспечить
+                <br> энергия, сэкономленная
+                <br>благодаря перерработке
+                <br> 1 алюминевой банки.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="article-go">
+    <div class="container h-100">
+        <div class="row h-100 align-items-start">
+            <div style="margin-top: 5vh" class="col-12 text-center">
+                <hr>
+                <h1 class="font-weight-medium">Самый безопасный способ обращения с отходами – раздельный сбор и
+                    переработка</h1>
+                <hr>
+            </div>
+            <div class="col-sm-0 col-md-3"></div>
+            <div class="col-sm-12 col-md-6"><h5 style="color: white;">Повторной переработке поддаётся
+                80–90% содержимого нашего мусорного ведра.</h5></div>
+            <div class="col-sm-0 col-md-3"></div>
+            <div style="margin-top: 5vh" class="col-12 text-center">
+                <a href="/instruction" id="instruction">
+                    <button type="button" class="btn btn-success btn-lg" style="width: 35vh; height: 8vh">ХОЧУ
+                        ДЕЙСТОВОВАТЬ!
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'page-footer.html' %}
+
+{% include 'page-common-scripts.html' %}
+
+{% include 'page-common-js.html' %}
+</body>
+
+</html>

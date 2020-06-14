@@ -1,0 +1,39 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-sm navbar-light bg-white shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+        <img class="logo-img img-fluid rounded" src='{% static "logoEcoTeam.png" %}'>
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item active"><a class="nav-link" href="/">
+          Главная страница
+      </a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/about">
+                О нас
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-value="contacts" href="#contacts">
+                Контакты
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbardrop" data-toggle="dropdown">
+                Меню
+            </a>
+          <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="/instruction">Инструкция по раздельному сбору</a>
+              <a class="dropdown-item" href="/articles">Блог об аспектах экологичности</a>
+              <a class="dropdown-item" href="#">Тест на экологичность</a>
+              <a class="dropdown-item" href="#">Прочее</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

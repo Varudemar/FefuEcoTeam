@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+
+  {% include 'page-common.html' %}
+
+  {% include 'page-common-style.html' %}
+
+  <title>FEFU ECO TEAM (©VLAD)</title>
+</head>
+
+<body style="background: white;">
+
+{% include 'page-navbar.html' %}
+
+<section class="Info-section-about">
+  <div class="row">
+    <div class="col-sm-0 col-md-2"></div>
+    <div class="col-sm-12 col-md-8" style="background: rgba(255, 255, 255, 0.57)">
+      <h2 style="color: #4f4f4f; opacity: 1; margin-bottom: 3vh">FEFU ECO TEAM - <br>
+        Экологическая служба спасения</h2>
+      <h5 align="justify" style="font-weight: 400"> Мы – твои экодрузья из ДВФУ, неравнодушные к проблемам экологии.
+        Здесь ты можешь найти единомышленников,
+        узнать интересные новости из мира экологии и следить за анонсами предстоящих событий.
+      </h5>
+      <img class="Info-section-header-img" src="{% static 'EcoTeam.jpg' %}">
+    </div>
+    <div class="col-sm-0 col-md-2"></div>
+  </div>
+</section>
+
+{% include 'page-footer.html' %}
+
+{% include 'page-common-scripts.html' %}
+
+{% include 'page-common-js.html' %}
+
+</body>
+</html>

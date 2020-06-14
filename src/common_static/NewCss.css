@@ -1,0 +1,369 @@
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo-img {
+  width: 8vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-style: normal;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  font-weight: 500;
+  opacity: 65%;
+  color: black;
+}
+
+h3 {
+  font-weight: 900;
+  color: black;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+a {
+  color: black;
+}
+
+section {
+  padding: 20vh 0 20vh 0;
+}
+
+p {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  background-color: white;
+  height: 0.2vh;
+  opacity: .8;
+}
+
+footer {
+  padding: 10vh 4vh 8vh 4vh;
+  min-height: 25vh;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 0 0 100pc rgba(0, 0, 0, 0.55) inset;
+  /*background: rgb(69, 69, 69);*/
+  color: white;
+}
+
+footer.a {
+  color: black;
+}
+
+table {
+  border: black;
+}
+
+.Info-section {
+  background-color: white;
+}
+
+.Info-section-about {
+  background-color: white;
+  min-height: 75vh;
+  background-image: url('instruction-info-section-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.Info-section-header {
+  vertical-align: middle;
+  margin: 4vh 0 4vh 0;
+}
+
+
+.Info-section-header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.Info-section-h1 {
+  color: black;
+  font-size: 3vh;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+.Info-section-img {
+  width: 15vh;
+  height: 15vh;
+}
+
+.Info-section-img-big {
+  width: 25vh;
+  height: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.Info-section-div {
+  margin-bottom: 5vh;
+}
+
+a:link,
+a:visited,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.title {
+  overflow: hidden;
+  /* Выравнивание заголовка по центру,
+  ** можно использовать left, right */
+  text-align: center;
+  /* Тут можно добавить другие стили для заголовка */
+  margin-bottom: 4vh;
+}
+
+.title span {
+  /* Стили тега обертки для заголовков
+  ** в несколько строк */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title:before,
+.title:after {
+  /* Обязательно указываем пустое свойство content,
+  ** иначе псевдоэлементы не появятся на сайте */
+  content: "";
+  /* Указываем что наши линии будут строчно-блочные и
+  ** выравнивание по высоте - по центру */
+  display: inline-block;
+  vertical-align: middle;
+  /* Задаем ширину 100% и выбираем высоту линии,
+  ** в нашем примере она равна 4 пикселям */
+  width: 100%;
+  height: 0.2vh;
+  /* Добавляем цвет для линии */
+  background-color: black;
+  /* Добавляем пседоэлемантам возможность изменить
+  ** позицию линии, для создания отступов от текста */
+  position: relative;
+}
+
+.title:before {
+  /* Смещаем левую линию на 100% влево, чтобы линия
+  ** встала рядом с текстом слева */
+  margin-left: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  left: -14px;
+}
+
+.title:after {
+  /* Смещаем правую линию на 100% вправо, чтобы
+  ** линия встала рядом с текстом справа */
+  margin-right: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  right: -14px;
+}
+
+.textbanner {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.masthead {
+  margin-top: 9vh;
+  height: 100vh;
+}
+
+.header-instruction {
+  box-shadow: 0 0 0 100pc rgba(0, 0, 0, 0.33) inset;
+  background-image: url("Instruction-background2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.slidebanner:before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slidebanner {
+  box-shadow: 0 0 0 100pc rgba(0, 0, 0, 0.55) inset;
+  background-image: url("Instruction-background1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 50vh;
+}
+
+.card:hover {
+  color: green;
+}
+
+.card img {
+  margin: 0;
+  align-self: center;
+}
+
+card {
+  border: None;
+}
+
+.review-card {
+  border: none;
+  height: 100%;
+}
+
+.review-card__body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 10vh;
+}
+
+.review-card__button {
+  margin-top: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 5.5vh;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 5.5vh;
+  color: black;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+  background-image: url('slider-icons/white-circle.png');
+  background-size: 2vh;
+}
+
+.carousel-indicators .active {
+  width: 2vh;
+  height: 2vh;
+  background-color: black;
+  background-image: url('slider-icons/filled-circle.png');
+}
+
+.carousel-container {
+  margin: 4vh 8vh;
+  padding-left: 10vh;
+}
+
+.carousel-second-title {
+  text-align: right;
+  padding-top: 1vh;
+  margin-right: 3vh;
+}
+
+.d-block {
+  margin-top: -3vh;
+}
+
+.EventsAndAction {
+  background-image: url('EventsBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.EventsAndAction-container {
+  background: rgba(255, 255, 255, 0.85);
+  margin: 0 5vh 0 5vh;
+  padding: 5vh 3vh 5vh 3vh;
+}
+
+.event-item {
+  margin-bottom: 3vh;
+}
+
+.article {
+  background-color: rgb(69, 69, 69);
+  min-height: 75vh;
+}
+
+.article-card {
+  border: rgb(69, 69, 69);
+  margin: 0 10vh 4vh 10vh;
+}
+
+.article-box {
+  position: relative;
+  overflow: hidden;
+  min-height: 40vh;
+  border-radius: 1vh 0 0 1vh;
+}
+
+.article-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+}
+
+.article-go {
+  box-shadow: 0 0 0 100pc rgba(0, 0, 0, 0.55) inset;
+  background-image: url("article.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 50vh;
+}
+
+.my-button {
+  margin: 3vh;
+}
